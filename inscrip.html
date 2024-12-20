@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnica Uno</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="Img/LogoEEST.png" alt="EEST1 img" height="140px">
+        <div class="titulo">
+            <h1>Escuela de Educación Técnica N° 1</h1>
+            <h1>Martín Miguel de Güemes</h1>
+            <nav>
+                <a href="index.html">Historia</a>
+                <a href="#">Imágenes</a>
+                <a href="inscrip.html">Inscripción a mesas</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <form>
+            <br><br>
+            <h3>Datos Personales:</h3><br><br>
+            <input type="text" name="DNI" id="inputDNI" placeholder="DNI" minlength="7" maxlength="8" size="8" required>
+            <button id="btnConsultar" type="button">Consultar</button>
+            <br><br>
+            <input type="text" name="Nombres" id="inputNombre" placeholder="Nombre" required>
+            <input type="text" name="inputApellido" id="apellido" placeholder="Apellido" required>
+            <br><br>
+            <input id="inputCorreo" type="email" placeholder="Correo" value="" required>
+            <button id="btnRegistrar" type="button">Registrar</button>
+            <input id="btnReset" type="reset" value="Borrar">
+            <br><br>
+            
+            <h3>Se desea inscribir en mesas para:</h3><br>
+            <div>
+                <label for="selectAnio">Indique su curso:</label>
+                <select id="selectAnio">
+                <option value="" selected disabled>Seleccione el año</option>
+                <option value="1">Primero</option>
+                <option value="2">Segundo</option>
+                <option value="3">Tercero</option>
+                <option value="4">Cuarto</option>
+                <option value="5">Quinto</option>
+                <option value="6">Sexto</option>
+                <option value="7">Séptimo</option>
+                </select>
+
+                <label for="selectDivision">División:</label>
+                <select id="selectDivision" disabled>
+                <option value="" selected disabled>Seleccione la división</option>
+                </select>
+
+            </div>
+        </form>
+        <br>
+        <a href="index.html">Inicio</a>
+    </main>
+    <footer id="contacto">
+        <img src="Img/IG.png" alt="IG_img" width="40px"> 
+        <a href="https://www.instagram.com/guemesmartinmiguel/">Instagram</a>
+        <img src="Img/FB.png" alt="IG_img" width="40px"> 
+        <a href="https://www.facebook.com/tecnica1longchamps">Facebook</a>
+        <img src="Img/Mail.png" alt="Mail_img" width="40px"> 
+        <a href="mailto:eest101@gmail.com">Correo</a>
+        <img src="Img/Tel.png" alt="Telefono_img" width="40px">
+        <p>011 - 4233-0909</p>
+    </footer>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

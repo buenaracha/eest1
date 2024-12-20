@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    background-image: url("Img/fondo.jpg");
+    background-size: contain;
+    background-repeat:repeat-x;
+    background-attachment: fixed;
+    
+
+    margin: 0px;
+    justify-content: center;
+    
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+header{
+    
+    display: flex;
+    position: sticky;
+    top: 5px;
+    width: 100%;
+    margin-right: 0px;
+    border-color: #e5e5e8 ;
+    background-color: transparent;
+    
+}
+.titulo{
+    
+    display: flex;
+    padding-left: 10px;
+    text-align: center;
+    flex-direction: column;
+}
+nav {
+    display: flex;
+    padding: 5px 10px;
+    border: solid 2px;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    
+}
+a{
+    font-weight: bold;
+    margin: 10px 20px;
+    color: rgb(20, 20, 183);
+    text-decoration: none;
+}
+a:hover{
+    color: chocolate;
+    
+
+}
+p{
+    text-align: justify;
+    text-indent: 30px;
+}
+main{
+    display: flex;
+    width: 700px;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding-top: 10px;
+}
+.mapa{
+    margin-top: 10px;
+    align-items: center;
+}
+footer{
+   
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+    margin: auto;
+}
