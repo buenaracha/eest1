@@ -42,7 +42,7 @@
             <h3>Se desea inscribir en mesas para:</h3><br>
             <div>
                 <label for="selectAnio">Indique su curso:</label>
-                <select id="selectAnio">
+                <select id="selectAnio" disabled>
                 <option value="" selected disabled>Seleccione el año</option>
                 <option value="1">Primero</option>
                 <option value="2">Segundo</option>
@@ -59,6 +59,16 @@
                 </select>
 
             </div>
+
+            <div id="materiasContainer" style="display: none;">
+                <br>
+                <h3>Seleccione las materias:</h3>
+                <br>
+                <div id="materiasCheckboxes"></div>
+                <button id="btnEnviarInscripcion" disabled>Enviar Inscripción</button>
+                
+            </div>
+
         </form>
         <br>
         <a href="index.html">Inicio</a>
