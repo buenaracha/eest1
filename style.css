@@ -19,7 +19,8 @@
 header {
     display: flex;
     position: sticky;
-    top: 5px;
+    top: 0px;
+    border: solid 5px #e7e5e8;
     width: 100%;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.8); /* Fondo sólido */
